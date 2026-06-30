@@ -1,0 +1,258 @@
+.Trade_union {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.Trade_union-line {
+    max-width: 1180px;
+    width: 100%;
+    height: 1px;
+    background-color: #424242;
+    margin: 0 auto 60px auto;
+}
+
+.Trade_union-header {
+    max-width: 599px;
+    margin-bottom: 20px;
+}
+
+.Trade_union-title {
+    margin-bottom: 20px;
+    color: #0070B8;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.Trade_union-subtitle {
+    color: #0097D8;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* ========================================== */
+/* СЕТКА - ДВА КОНТЕЙНЕРА В РЯД */
+/* ========================================== */
+
+.Trade_union-grid {
+    max-width: 1180px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin: 0 auto;
+    /* padding удален - текст начинается от края контейнера */
+}
+
+/* Левая часть - информация */
+.Trade_union-info {
+    flex: 1;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.Trade_union-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+/* ========================================== */
+/* АЛГОРИТМ СО СТРЕЛКОЙ */
+/* ========================================== */
+
+.Trade_union-algorithm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-top: 56px;
+    position: relative;
+    width: 100%;
+}
+
+/* Каждый элемент алгоритма */
+.Trade_union-algorithm-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    min-height: 180px;
+    max-width: 200px;
+}
+
+/* Круглые кнопки */
+.Trade_union-algorithm-item .step-btn {
+    width: 80px;
+    height: 80px;
+    background: #EBECED;
+    border-radius: 50%;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.Trade_union-algorithm-item .step-btn:hover {
+    background: #0097D8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.Trade_union-algorithm-item p {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    min-height: 40px;
+}
+
+/* ========================================== */
+/* КНОПКА "ОТКРЫТЬ ЗАЯВЛЕНИЕ" */
+/* ========================================== */
+
+.open-application-btn {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 12px;
+    padding: 10px 24px;
+    background: #0070B8;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 20px;
+    transform: translateY(-5px);
+    display: inline-block;
+}
+
+.open-application-btn:hover {
+    background: #0097D8;
+    color: #ffffff !important;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 112, 184, 0.3);
+}
+
+.Trade_union-algorithm-item:hover .open-application-btn {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Trade_union-algorithm-item:hover .step-btn {
+    background: #0097D8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ========================================== */
+/* СТРЕЛКА - АДАПТИВНАЯ */
+/* ========================================== */
+
+.Trade_union-arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    padding: 0 10px;
+    min-height: 180px;
+    max-width: 180px;
+    min-width: 40px;
+}
+
+.Trade_union-arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Trade_union-arrow::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    min-width: 30px;
+    height: 3px;
+    background: #0097D8;
+    border-radius: 2px;
+}
+
+.Trade_union-arrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid #0097D8;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+/* ========================================== */
+/* ПРАВАЯ ЧАСТЬ - ПРЕИМУЩЕСТВА */
+/* ========================================== */
+
+.Trade_union-advantages {
+    flex: 0 0 380px;
+    max-width: 380px;
+    min-width: 0;
+    background: #EBECED;
+    border-radius: 30px;
+    min-height: 472px;
+}
+
+.Trade_union-advantages-content {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Trade_union-advantages-name {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #222;
+    font-size: 20px;
+}
+
+.Trade_union-advantages-content p {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #757676;
+    position: relative;
+}
+
+.Trade_union-advantages-content p::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    height: 16px;
+    border-right: 3px solid #0097D8;
+    border-bottom: 3px solid #0097D8;
+}
+
+
+
+

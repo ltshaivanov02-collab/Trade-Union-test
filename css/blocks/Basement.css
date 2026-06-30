@@ -1,0 +1,155 @@
+.Basement {
+    background: #EBECED;           /* ← фон на всю ширину */
+    width: 100%;
+}
+
+.Basement .container {
+    width: 100%;
+    max-width: 1440px;
+    height: 310px;                 /* ← исходная высота */
+    background: transparent;
+    padding: 0 130px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* ========================================== */
+/* HEADER - ЛОГОТИП И НАЗВАНИЕ */
+/* ========================================== */
+
+.Basement-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 81px;
+    margin-top: 28px;
+}
+
+.Basement-logo {
+    width: 83px;
+    height: 81px;
+    flex-shrink: 0;
+}
+
+.Basement-header-title {
+    color: #0070B8;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* ========================================== */
+/* КОНТАКТЫ - ТРИ БЛОКА В РЯД */
+/* ========================================== */
+
+.Basement-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 105px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* ========================================== */
+/* ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ БЛОКОВ */
+/* ========================================== */
+
+.Basement-legal-entity,
+.Basement-telephone,
+.Basement-e-mail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* ========================================== */
+/* БЛОК 1 - ЮРИДИЧЕСКИЙ АДРЕС */
+/* ========================================== */
+
+.Basement-legal-entity-img {
+    width: 27px;
+    height: 37px;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.Basement-legal-entity-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.Basement-legal-entity-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+.Basement-legal-entity-text p {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 2px 0;
+    color: #333;
+}
+
+/* ========================================== */
+/* БЛОК 2 - ТЕЛЕФОН */
+/* ========================================== */
+
+.Basement-telephone-img {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
+.Basement-telephone-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.Basement-telephone-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+.Basement-telephone-text p {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 2px 0;
+    color: #333;
+}
+
+/* ========================================== */
+/* БЛОК 3 - E-MAIL */
+/* ========================================== */
+
+.Basement-e-mail-img {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
+.Basement-e-mail-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.Basement-e-mail-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+.Basement-e-mail-text p {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 2px 0;
+    color: #333;
+}
+
+
